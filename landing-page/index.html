@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NailsNicole</title>
+    <link rel="stylesheet" href="./index.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header__navbar">
+            <div class="header__navbar-logo">
+                <p>Descubre lo que tenemos para ti ♡</p>
+            </div>
+            <nav class="header__navbar-nav">
+                <ul>
+                    <li>
+                        <a href="../page-one/index.html" class="boton" target="_blank">TIPS</a>
+                    </li>
+                    <li>
+                        <a href="../page-two/index.html" class="boton" target="_blank">CATALOGO</a>
+                    </li>
+                    <li>
+                        <a href="../page-three/index.html" class="boton" target="_blank">IDENTIFICATE</a>
+                    </li>
+                    <li>
+                        <a href="" class="boton" target="_blank">TENDENCIAS</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="text-degradado">
+            <h1>NAILS NICOLE</h1>
+            <p>¡Tu manicure perfecto directamente en tu hogar!</p>
+            <p>Servicio profesional de manicure a domicilio en Bogotá</p>
+            <div class="carousel-container">
+                <div class="carousel-images">
+                    <img src="../catalogo fotos/photo1.png" alt="Imagen 1" class="carousel-image">
+                    <img src="../catalogo fotos/photo2.png" alt="Imagen 2" class="carousel-image">
+                    <img src="../catalogo fotos/photo4.png" alt="Imagen 3" class="carousel-image">
+                </div>
+                
+                <div class="carousel-controls">
+                    <div class="carousel-control prev" onclick="changeSlide(-1)">❮</div>
+                    <div class="carousel-control next" onclick="changeSlide(1)">❯</div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="services">
+            <h2>Nuestos servicios</h2>
+            
+                <p>♡ Manicure basico</p>
+                <p>♡ Manicure con esmalte semipermanente</p>
+                <p>♡ Uñas acrilicas</p>
+            
+        </div>
+    </header>
+    <script>
+        let slideIndex = 0;
+        showSlide(slideIndex);
+
+        function changeSlide(n) {
+            showSlide(slideIndex += n);
+        }
+
+        function showSlide(n) {
+            const slides = document.getElementsByClassName("carousel-image");
+            if (n >= slides.length) { slideIndex = 0 }
+            if (n < 0) { slideIndex = slides.length - 1 }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex].style.display = "block";
+        }
+    </script>
+    
+</body>
+</html>

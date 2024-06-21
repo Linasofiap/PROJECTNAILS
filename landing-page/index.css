@@ -1,0 +1,129 @@
+.body {
+    margin: 0;
+    
+}
+.text-degradado {
+    background-image: url(../image/copy\ fondo-pintado-acuarela-pastel_23-2148959639.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.text-degradado h1 {
+    font-size: 90px;
+    font-weight: bolder;
+    font-style: italic;
+    background: linear-gradient(#f456d7, hsl(278, 98%, 80%), #6fbef0);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+p {
+    font-size: 45px;
+    text-align: center;
+    color: rgb(214, 57, 198);
+}
+h2 {
+    font-size: 60px;
+    text-align: center;
+    color: rgb(222, 79, 193);
+
+}
+.services-list p {
+    font-size: 35px;
+}
+h3 {
+    font-size: 45px;
+    font-weight: bolder;
+    text-align: center;
+}
+a {
+    transition: font-size 2s ease-out, border-bottom 2s ease-out;
+    text-decoration: none;
+    
+}
+a:hover {
+    font-size: 20px;
+    background-color: rgb(0, 204, 255);
+    transition: background-color 0.6s;
+}
+
+.boton {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgb(255, 134, 235);
+    color: white;
+    border-radius: 7px;
+    margin: 10px;
+    transition: transform 0.5s ease; 
+    
+    
+}
+
+.boton:hover {
+    transform: scale(1.1); 
+    background-color: rgb(31, 178, 241);
+}
+.header__navbar {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    background-color: hsl(278deg 98% 80% / 18%);
+    }
+    .header__navbar-logo {
+        justify-self: start;
+        align-self: center;
+        margin-left: 50px;
+        
+    }
+    .header__navbar-logo p {
+        font-size: 30px;
+        color: #4079ff;
+    }
+    .header__navbar-nav {
+        align-self: center;
+    }
+    .header__navbar-nav ul {
+        display: grid;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        grid-template-columns: repeat(4, 1fr);
+
+    
+    }     
+    .carousel-container {
+        max-width: 300px; 
+        margin: 0 auto; 
+        overflow: hidden; 
+        border: 1px solid #ccc; 
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        padding: 10px; 
+    }
+    .carousel-images {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    .carousel-image {
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: block;
+    }
+    .carousel-controls {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        background-color: rgb(185, 245, 255); /* Fondo para los controles */
+        padding: 5px 10px; /* Espaciado interno de los controles */
+    }
+    .carousel-control {
+        cursor: pointer;
+        background-color: #f8e1ff; /* Color de fondo de los controles */
+        border: none;
+        outline: none;
+        padding: 5px;
+        border-radius: 50%;
+    }
+    .carousel-control:hover {
+        background-color: #fff6c1; /* Color de fondo al pasar el mouse */
+    }

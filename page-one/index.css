@@ -1,0 +1,52 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.tip {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-left: 5px solid #4CAF50;
+    text-align: left;
+    transition: transform 0.3s ease;
+    border-radius: 10px; /* Añadido para hacer los bordes más redondeados */
+}
+.tip:hover {
+    transform: scale(1.02);
+}
+.tip h2 {
+    color: #4CAF50;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: center; /* Centrar el título */
+}
+.tip p {
+    margin: 10px 0;
+    color: #666;
+    text-align: justify; /* Justificar el texto */
+}
+.encourage {
+    margin-top: 30px;
+    font-style: italic;
+    color: #777;
+    font-size: 1.1rem;
+    text-align: center; /* Centrar el texto */
+}
